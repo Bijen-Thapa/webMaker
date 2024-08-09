@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mkar</title>
+  </head>
+  <body>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h2>Check domain availability</h2>
+
+      <form
+        name="form"
+        class="form"
+        method="post"
+        action="https://register.com.np/checkdomain"
+        enctype="multipart/form-data"
+      >
+        <input type="hidden" name="_token" value="aa <%= token %>" />
+        <div class="row">
+          <div class="col-md-7 col-sm-6 col-xs-12">
+            <input
+              class="form-control"
+              id="domainName"
+              name="domainName"
+              type="text"
+              placeholder="eg. domainname"
+              required=""
+            />
+            <div class="clearfix"></div>
+            <p class="domainmsg"></p>
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <select
+              class="select2 select2-hidden-accessible"
+              name="domainExtension"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <option value=".com.np" selected="">.com.np</option>
+
+              <option value=".edu.np">.edu.np</option>
+
+              <option value=".gov.np">.gov.np</option>
+
+              <option value=".net.np">.net.np</option>
+
+              <option value=".org.np">.org.np</option>
+
+              <option value=".info.np">.info.np</option>
+
+              <option value=".mil.np">.mil.np</option>
+
+              <option value=".name.np">.name.np</option>
+
+              <option value=".coop.np">.coop.np</option></select
+            ><span
+              class="select2 select2-container select2-container--default"
+              dir="ltr"
+              style="width: 345.2px"
+              ><span class="selection"
+                ><span
+                  class="select2-selection select2-selection--single"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                  aria-labelledby="select2-domainExtension-pq-container"
+                  ><span
+                    class="select2-selection__rendered"
+                    id="select2-domainExtension-pq-container"
+                    title=".com.np"
+                    >.com.np</span
+                  ><span class="select2-selection__arrow" role="presentation"
+                    ><b role="presentation"></b></span></span></span
+              ><span class="dropdown-wrapper" aria-hidden="true"></span
+            ></span>
+          </div>
+
+          <div class="col-md-2 col-sm-2 col-xs-12">
+            <button type="submit" class="dsearchbtn">Search</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="clearfix"></div>
+      <p class="domain-rules">
+        Please enter domain name without www, http:// and domain extensions
+      </p>
+    </div>
+  </body>
+</html>
